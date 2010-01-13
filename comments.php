@@ -31,7 +31,7 @@
 				<figure><div class="avatar"><?php echo get_avatar( $comment, 48); ?></div></figure>
 				<div class="comment">
 					<header>
-						<div class="fr quiet small"><a href="#comment-<?php comment_ID() ?>"><time pubdate><?php comment_date() ?> at <?php comment_time() ?></time></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></div>
+						<div class="fr quiet small"><a href="#comment-<?php comment_ID() ?>"><time datetime="<?php comment_date('Y-m-d'); ?>" pubdate><?php comment_date() ?> at <?php comment_time() ?></time></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></div>
 						<?php comment_author_link() ?>
 		                <?php if ($comment->comment_approved == '0') : ?>
 		                <em>Your comment is awaiting moderation.</em>

@@ -193,7 +193,7 @@ function search () {
 	?>
 	<div id="search">
 		<form action="<?php bloginfo('home'); ?>/" method="get">
-			<input type="search" results="10" autosave="web5.search" placeholder="Search" value="<?php the_search_query(); ?>" id="s" name="s">
+			<input type="search" placeholder="Search" value="<?php the_search_query(); ?>" id="s" name="s">
 		</form>
 	</div>
 	<?php

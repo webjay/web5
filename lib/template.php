@@ -62,16 +62,16 @@
 				<div class="span-16 post-wrapper">
 					<section>
 						<header>
-							<hgroup>
 							<?php if (single_cat_title(null, false) != '') : ?>
+							<hgroup>
 							<h3><?php single_cat_title('&raquo; '); ?></h3>
 							<?php 
 							if (category_description() != '') {
 								echo('<h4>'.category_description().'</h4>');
 							}
 							?>
-							<?php endif; ?>
 							</hgroup>
+							<?php endif; ?>
 							<?php
 							if (get_search_query() != '') {
 								echo('<h3>');
@@ -96,8 +96,8 @@
 								</div>
 								<div class="clear quiet small">
 									<em>
-										<time pubdate><?php the_date() ?></time>
-										by <span class="author vcard"><span class="fn"><?php the_author() ?></span></span>
+										<time datetime="<?php the_time('Y-m-d'); ?>" pubdate><?php the_date(); ?></time>
+										by <span class="author vcard"><span class="fn"><?php the_author(); ?></span></span>
 										in <?php the_category(', ') ?> <?php the_tags('tagged ', ', '); ?>
 									</em>
 								</div>
